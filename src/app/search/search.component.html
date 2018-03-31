@@ -1,0 +1,8 @@
+
+<input type="text" name="searchInput" id="searchInput">
+<button class='button is-success large is-outlined' id="searchButton" (click)="search()">
+    Search
+</button>
+<div id="searchResult" *ngFor="let result of searchResults">
+    {{ result.name }}
+</div>
